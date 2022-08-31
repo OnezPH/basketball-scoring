@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basketball Scoring - HTML CSS Javascript</title>
+  <link rel="icon" href="logo.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <div class="header">
+        <h2>Basketball Scoring</h2>
+      </div>
+      <div class="scoring-con">
+        <div class="home-con">
+          <div class="home-wrap">
+            <h3>Home</h3>
+            <div class="score-con home-score-con">
+              <h1 id="Ascore">0</h1>
+            </div>
+            <div class="points-btn-con">
+              <button type="button" onclick="teamAaddOne()">+1</button>
+              <button type="button" onclick="teamAaddTwo()">+2</button>
+              <button type="button" onclick="teamAaddThree()">+3</button>
+            </div>
+          </div>
+        </div>
+        <div class="period-con">
+          <div class="p-wrap">
+            <div class="p-count-con">
+              <span id="periodSpan">1</span>
+            </div>
+            <h3>Period</h3>
+          </div>
+        </div>
+        <div class="guest-con">
+          <div class="guest-wrap">
+            <h3>Guest</h3>
+            <div class="score-con guest-score-con">
+              <h1 id="Bscore">0</h1>
+            </div>
+            <div class="points-btn-con">
+              <button type="button" onclick="teamBaddOne()">+1</button>
+              <button type="button" onclick="teamBaddTwo()">+2</button>
+              <button type="button" onclick="teamBaddThree()">+3</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="save-newgame-con">
+        <button type="button" name="button" onclick="newGame()">New Game</button>
+        <button type="button" name="button" onclick="save()">Save</button>
+      </div>
+      <div id="gameData" class="game-data-con">
+        <table>
+          <tr>
+            <th>Period</th>
+            <th>Team</th>
+            <th>Score</th>
+            <th>Win/Lose</th>
+          </tr>
+          <tr class="blue">
+            <td id="periodTdA" id="new"></td>
+            <td id="teamTdA"></td>
+            <td id="scoreTdA"></td>
+            <td id="winLoseTdA"></td>
+          </tr>
+          <tr class="red">
+            <td id="periodTdB"></td>
+            <td id="teamTdB"></td>
+            <td id="scoreTdB"></td>
+            <td id="winLoseTdB"></td>
+          </tr>
+          <tr class="blue">
+            <td id="twoperiodTdA"></td>
+            <td id="twoteamTdA"></td>
+            <td id="twoscoreTdA"></td>
+            <td id="twowinLoseTdA"></td>
+          </tr>
+          <tr class="red">
+            <td id="twoperiodTdB"></td>
+            <td id="twoteamTdB"></td>
+            <td id="twoscoreTdB"></td>
+            <td id="twowinLoseTdB"></td>
+          </tr>
+          <tr class="blue">
+            <td id="threeperiodTdA"></td>
+            <td id="threeteamTdA"></td>
+            <td id="threescoreTdA"></td>
+            <td id="threewinLoseTdA"></td>
+          </tr>
+          <tr class="red">
+            <td id="threeperiodTdB"></td>
+            <td id="threeteamTdB"></td>
+            <td id="threescoreTdB"></td>
+            <td id="threewinLoseTdB"></td>
+          </tr>
+          <tr class="blue">
+            <td id="fourthperiodTdA"></td>
+            <td id="fourthteamTdA"></td>
+            <td id="fourthscoreTdA"></td>
+            <td id="fourthwinLoseTdA"></td>
+          </tr>
+          <tr class="red">
+            <td id="fourthperiodTdB"></td>
+            <td id="fourthteamTdB"></td>
+            <td id="fourthscoreTdB"></td>
+            <td id="fourthwinLoseTdB"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
